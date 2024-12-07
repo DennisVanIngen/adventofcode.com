@@ -19,8 +19,25 @@ rd.on('line', function (line) {
 rd.on('close', function () {
     leftSide.sort((a, b) => a - b);
     rightSide.sort((a, b) => a - b);
+
+    // get all left side values
+    const repetitionCounter = new Map();
     for (let i = 0; i < leftSide.length; i++) {
-        counter += Math.abs(leftSide[i] - rightSide[i]);
+        repetitionCounter.set(leftSide[i], 0);
     }
-    console.log("Total difference: " + counter);
+
+    // count the right side value repetitions
+    for (let i = 0; i < rightSide.length; i++) {
+        repetitionCounter.set(
+            rightSide[i],
+            repetitionCounter.get(rightSide[i]) + 1
+        );
+    }
+
+    //add all up
+    for (let i = 0; i < leftSide.length; i++) {
+        counter += leftSide[i] * repetitionCounter.get(leftSide[i]);
+    }
+
+    console.log(counter);
 });
