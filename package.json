@@ -1,0 +1,8 @@
+{
+  "name": "javascript",
+  "type": "module",
+  "scripts": {
+    "day1part1": "node javascript/2024/day1/part1/solution.js"
+  },
+  "author": "Dennis van Ingen"
+}
