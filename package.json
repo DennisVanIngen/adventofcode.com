@@ -9,7 +9,8 @@
     "day3part1": "node javascript/2024/day3/part1.js",
     "day3part2": "node javascript/2024/day3/part2.js",
     "day4part1": "node javascript/2024/day4/part1.js",
-    "day4part2": "node javascript/2024/day4/part2.js"
+    "day4part2": "node javascript/2024/day4/part2.js",
+    "day5part1": "node javascript/2024/day5/part1.js"
   },
   "author": "Dennis van Ingen"
 }
